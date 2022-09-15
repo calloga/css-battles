@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <div class="container">
+      <div class="bars">
+        <div class="bar"></div>
+        <div class="bar s"></div>
+        <div class="bar"></div>
+      </div>
+      <div class="lines">
+        <div class="line a"></div>
+        <div class="line b"></div>
+        <div class="line c"></div>
+      </div>
+    </div>
+  </body>
+
+  <style>
+    body {
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      background: transparent;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .lines {
+      width: 240px;
+      height: 80px;
+      position: absolute;
+      top: 20px;
+
+      display: flex;
+      justify-content: space-between;
+    }
+    .line {
+      width: 20px;
+      height: 40px;
+      background: white;
+      z-index: -1;
+    }
+
+    .b {
+      position: relative;
+      top: 40px;
+    }
+
+    .c {
+      height: 80px;
+    }
+
+    .bars {
+      width: 300px;
+      height: 120px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .bar {
+      width: 300px;
+      height: 20px;
+      background: #af067c;
+      border-radius: 50px;
+    }
+    .s {
+      transform: rotateZ(-4deg);
+    }
+  </style>
+</html>
