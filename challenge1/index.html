@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <div class="container">
+      <div class="outer">
+        <div class="inner"></div>
+      </div>
+
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+
+      <div class="blob">
+        <div class="blob-inner a"></div>
+        <div class="blob-inner b"></div>
+        <div class="blob-inner c"></div>
+      </div>
+    </div>
+    <style>
+      body {
+        background: #000000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+      }
+      .outer {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #e0e246;
+        margin-left: 52px;
+        position: relative;
+        z-index: -1;
+      }
+      .inner {
+        background-color: #000000;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        transform: rotate(45deg);
+        right: -67%;
+      }
+
+      .dots {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        gap: 20px;
+      }
+      .dot {
+        background-color: #ffffff;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+      }
+
+      .blob {
+        width: 60px;
+        height: 60px;
+        border-radius: 50% 50% 0% 0%;
+        background: #c74e4e;
+        margin-left: 5px;
+        position: relative;
+        z-index: -1;
+        display: flex;
+        justify-content: space-between;
+      }
+      .blob-inner {
+        background-color: #000000;
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        transform: rotate(45deg);
+        bottom: -19%;
+        left: 0px;
+      }
+      .b {
+        margin-left: 20px;
+      }
+      .c {
+        margin-left: 40px;
+      }
+    </style>
+  </body>
+</html>
